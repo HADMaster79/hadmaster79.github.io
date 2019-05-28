@@ -1,0 +1,509 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+input:focus{
+   border: none;
+   outline: none;
+}
+button:focus{
+   border: none;
+   outline: none;
+}
+textarea{
+   border: none;
+   outline: none;
+}
+select{
+   border: none;
+   outline: none;
+}
+li {
+   display: inline-block;
+   border-left: 2px solid rgb(61, 61, 61);
+   margin-right: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding-left: 10px;
+   position: relative;
+   left: 100px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+li:first-child {
+   border: none;
+}
+
+ul {
+   background-color: rgb(6, 6, 32);
+   position: relative;
+   top: 0;
+   left: 0;
+}
+ul li ul{
+   display: none;
+
+}
+ul li:hover ul{
+   display: inherit;
+   position: absolute;
+   z-index: 5;
+   top: 39px;
+   border-radius: 0px 0px 22px 22px;
+}
+ul li ul li{
+   display: block;
+   border: none;
+   position: static;
+   min-width: 100px;
+}
+.nav-link {
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+   border-radius: 22px;
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-timing-function: ease-in;
+}
+
+.nav-link:hover {
+   color: aqua;
+   background-color: rgb(11, 11, 53);
+}
+
+.nav-link:active {
+   color: white;
+}
+
+.image-logo {
+   background-image: url(../img/flash.jpg);
+   background-size: cover;
+   width: 75px;
+   height: 75px;
+   border-radius: 50%;
+   border: 10px solid rgb(6, 6, 32);
+   position: relative;
+   top: -50px;
+   left: 10px;
+   z-index: 2;
+}
+
+.image {
+   background-image: linear-gradient(to bottom right, rgb(6, 6, 32), rgb(0, 57, 131));
+   height: 200px;
+   background-size: cover;
+   position: relative;
+   top: -95px;
+   z-index: 0;
+}
+
+h1 {
+   line-height: 200px;
+   text-align: center;
+   color: white;
+}
+
+header {
+   margin-bottom: -95px;
+}
+
+.main-header {
+   height: 75px;
+}
+
+.titr {
+   color: black;
+   line-height: 75px;
+   background-color: rgb(145, 145, 145);
+}
+
+.news {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.news-subject {
+   width: 350px;
+   border: 1px solid black;
+   padding: 10px;
+   margin: 20px;
+   border: none;
+   border-left: solid rgb(0, 57, 131) 5px;
+   background-color: rgba(145, 145, 145, 0.493);
+}
+
+.title {
+   color: black;
+   line-height: initial;
+}
+
+.news-img {
+   margin: 10px 25px 10px 25px;
+}
+
+.news-button {
+   padding: 10px;
+   margin: 10px;
+   border: none;
+   background-color: rgb(0, 57, 131);
+   color: white;
+   box-shadow: rgb(6, 6, 32) 3px 3px;
+   transition-property: all;
+   transition-duration: 0.25s;
+   transition-timing-function: ease-in;
+}
+
+.news-button:hover {
+   background-color: rgb(6, 6, 32);
+   box-shadow: rgb(0, 57, 131) 3px 3px;
+}
+
+p {
+   margin-left: 25px;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse; 
+}
+
+td,
+th {
+   text-align: center;
+   padding: 10px;
+}
+
+.app-logo {
+   width: 50px;
+}
+
+.logo {
+   width: 50px;
+   height: 50px;
+}
+
+tr:nth-child(even) {
+   background-color: rgba(145, 145, 145, 0.493);
+}
+.comment{
+   display: block;
+   border: 5px solid rgb(0, 57, 131);
+   margin: 10px auto;
+   padding: 10px;
+   border-radius: 22px;
+   width: 300px;
+   transition-property: all;
+   transition-duration: 0.25s;
+   transition-timing-function: ease-in;
+}
+textarea{
+   resize: none;
+   width: 300px;
+   height: 150px;
+}
+.comment:hover{
+   border: 5px solid rgb(6, 6, 46);
+}
+.comment:focus{
+   box-shadow: rgb(0, 57, 131)  0px 0px 5px 5px;
+   border: 5px solid rgb(6, 6, 46);
+}
+.comment::placeholder{
+   color: rgb(145, 145, 145);
+}
+.submit-button{
+   background-color: rgb(0, 57, 131);
+   width: 150px;
+   text-align: center;
+   border: none;
+   padding: 10px;
+   display: block;
+   margin: auto;
+   border-radius: 22px;
+   color: white;
+   transition-property: all;
+   transition-duration: 0.25s;
+   transition-timing-function: ease-out;
+}
+.contact-us-element{
+   width: 40%;
+   position: relative;
+}
+.submit-button:hover{
+   box-shadow: rgb(0, 57, 131)  0px 0px 5px 5px;
+   background: rgb(6, 6, 46);
+   
+}
+select{
+   border: 5px solid rgb(0, 57, 131);
+   margin: 10px auto;
+   padding: 10px;
+   border-radius: 22px;
+   width: 300px;
+   transition-property: all;
+   transition-duration: 0.25s;
+   transition-timing-function: ease-out;
+}
+select:hover{
+   border: 5px solid rgb(6, 6, 46);
+}
+select:focus{
+   border: 5px solid rgb(6, 6, 46);
+   box-shadow: rgb(0, 57, 131)  0px 0px 5px 5px;
+}
+select,.region{
+   display: block;
+   margin: 10px auto;
+   text-align: center;
+}
+.contact-us{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+.address{
+   font-size: 26px;
+   margin: 30px;
+   padding: 10px;
+   background-color: rgb(0, 57, 131);
+   border-radius: 22px;
+   color: white;
+}
+iframe{
+   width: 400px;
+   height: 350px;
+}
+.about-us{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+hr{
+   border: 5px solid rgb(6, 6, 46);
+   border-radius: 22px;
+}
+.up-button{
+   position: fixed;
+   width: 50px;
+   height: 50px;
+   background-color: rgb(0, 57, 131);
+   bottom: 20px;
+   right: 20px;
+   border-radius: 50%;
+}
+.animate-1{
+   width: 100px;
+   height: 100px;
+   background-color: rgb(0, 57, 131);
+   position: relative;
+   animation-duration: 4s;
+   animation-iteration-count: 3;
+   animation-name: boom;
+   animation-timing-function: ease;
+   margin: 20px;
+   top: 150px;
+   left: 0;
+}
+.animate-2{
+   display: none;
+}
+@keyframes boom {
+   25%{
+      border-radius: 50%;
+      transform: rotate(0deg);
+      top: 0px;
+      left: 0;
+   }
+   50%{
+      border-radius: 0;
+      transform: rotate(45deg);
+      left: 300px;
+      top: 0px;
+   }
+   75%{
+      transform: rotate(0deg);
+      transform: skewX(25deg);
+      top: 150px;
+      left: 300px;
+   }
+   100%{
+      
+   }
+}
+.ball{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-color: rgb(0, 57, 131);
+   margin: auto;
+   margin-top: 25px;
+   padding: 3px;
+   box-sizing: border-box;
+}
+[class^=anime]{
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   left: 200px;
+   /* border: 1px solid black; */
+   transform-origin: bottom;
+}
+.anime-1{
+   animation-duration: 3s;
+   animation-name: boomboom;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+.anime-2{
+   animation-duration: 3s;
+   animation-name: boomboom;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   animation-delay: .25s;
+}
+.anime-3{
+   animation-duration: 3s;
+   animation-name: boomboom;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   animation-delay: .5s;
+}
+.anime-4{
+   animation-duration: 3s;
+   animation-name: boomboom;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   animation-delay: .75s;
+}
+.anime-5{
+   animation-duration: 3s;
+   animation-name: boomboom;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   animation-delay: 1s;
+}
+@keyframes boomboom{
+   100%{
+      transform: rotate(360deg);
+   }
+}
+.animator{
+   height: 500px;
+   position: relative;
+}
+.loading2{
+   height: 30px;
+   width: 100px;
+   border-radius: 22px;
+   background-color: rgb(0, 57, 131);
+   left: 100px;
+   top: 50px;
+   position: absolute;
+   animation-name: loading2;
+   animation-duration: 5s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+}
+@keyframes loading2{
+   0%{
+      width: 30px;
+      left: 100px;
+      top: 50px;
+   }
+   5%{
+      width: 100px;
+   }
+   10%{
+      width: 30px;
+      left: 300px;
+      top: 50px;
+      background-color: yellow;
+   }
+   15%{
+      width: 100px;
+   }
+   20%{
+      width: 30px;
+      left: 100px;
+      top: 50px;
+      background-color: green;
+   }
+   25%{
+      width: 100px;
+   }
+   30%{
+      width: 30px;
+      left: 300px;
+      top: 50px;
+      background-color: red;
+   }
+   35%{
+      width: 100px;
+   }
+   40%{
+      width: 30px;
+      left: 100px;
+      top: 50px;
+      background-color: blue;
+   }
+   45%{
+      width: 100px;
+   }
+   50%{
+      width: 30px;
+      left: 300px;
+      top: 50px;
+      background-color: yellow;
+   }
+   55%{
+      width: 100px;
+   }
+   60%{
+      width: 30px;
+      left: 100px;
+      top: 50px;
+      background-color:green;
+   }
+   65%{
+      width: 100px;
+   }
+   70%{
+      width: 30px;
+      left: 300px;
+      top: 50px;
+      background-color: red;
+   }
+   75%{
+      width: 100px;
+   }
+   80%{
+      width: 30px;
+      left: 100px;
+      top: 50px;
+      background-color: blue;
+   }
+   85%{
+      width: 100px;
+   }
+   90%{
+      width: 30px;
+      left: 300px;
+      top: 50px;
+      background-color: yellow;
+   }
+   95%{
+      width: 100px;
+   }
+   100%{
+      width: 30px;
+      left: 100px;
+      top: 50px;
+      background-color: green;
+   }
+}
